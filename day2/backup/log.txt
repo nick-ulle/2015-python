@@ -1,0 +1,156 @@
+clear
+davis = {'cool': True,
+'students': 35e3}
+davis
+# This is a dictionary. The whole Python language is built on dictionaries
+davis['cool']
+davis['students']
+clear
+davis
+davis.keys()
+davis.values()
+# Keys and values together are called 'items'
+davis.items()
+davis
+clear
+'cool' in Davis
+'cool' in davis
+# This says that 'cool' is a key in the davis dictionary
+davis['cool']
+# To answer this you need to know the philosophy of Python
+import this
+davis
+davis['stats']
+# Lets add stats to davis
+davis['stats'] = 'excellent'
+davis
+depts = ['stats', 'math', 'ecology']
+clear
+depts
+depts = ['stats', 'math', 'ecology']
+davis
+depts
+type(davis)
+type(depts)
+type(123)
+type(123.1)
+type('123.1')
+type(True)
+davis['cool']
+type(davis['cool'])
+clear
+depts
+nums = [0, 10, 20, 30, 40]
+# We are learning how to explore the basic data structures
+len
+?len
+len?
+nums
+len(nums)
+# how do we pick out the first two?
+nums[:2]
+# Python begins counting at 0!!!
+nums[0]
+nums[1]
+nums[2]
+nums
+nums[:2]
+# This is called 'slicing'
+nums[-1]
+nums[-2]
+nums[-3]
+nums
+nums[2:]
+# nums up to, but excluding the 2nd element
+nums[:2]
+# nums beginning with the 2nd element
+nums[2:]
+nums
+nums[:2]
+nums[2:]
+nums
+# What do you observe?
+nums[:2] + nums[2:]
+nums
+nums[:2] + nums[2:] == nums
+k = 3
+nums[:k] + nums[k:] == nums
+k = 10
+len(nums)
+nums[:k] + nums[k:] == nums
+# Can also do negative slices
+nums[-3:]
+nums
+nums[:k] + nums[k:] == nums
+# The positive side of 0 indexing is that we get this pretty identity
+# We have learned slicing
+import this
+import this
+# flat is better than nested
+davis
+depts
+# We've seen it in Python - now in JSON!
+# Ways to transfer data
+davis
+import json
+json.dumps?
+json.dumps(davis)
+davis
+davis
+davis['dept'] = dept
+davis['dept'] = depts
+davis
+davis['dept']
+type(davis['dept'])
+json.dumps(davis)
+davis
+# We have seen that JSON looks just like Python lists and dicts
+# Time to fetch some live data!
+# import requests
+import requests
+requests.get
+baseurl = 'https://api.github.com/search/repositories'
+response = requests.get(baseurl)
+response
+response
+response.status_code
+response
+response.content
+response.json
+response.json()
+r = response.json()
+type(r)
+r.keys()
+r
+r['errors']
+type(r['errors'])
+len(r['errors'])
+r['errors']
+r['errors'][0]
+type(r['errors'][0])
+r
+payload = {'q': 'data science', 'sort': 'stars'}
+ds = requests.get(baseurl, params=payload)
+ds
+ds.json()
+dsj = ds.json()
+type(dsj)
+len(dsj)
+dsj.keys()
+dsj['total_count']
+dsj['incomplete_results']
+dsji = dsji['items']
+dsji = dsj['items']
+clear
+dsji
+clear
+len(dsji)
+type(dsji)
+dsji[0]
+# Lets get the description for all of them!
+type(dsji[0])
+[x['description'] for x in dsji]
+%run download_github.py
+ds
+%run download_github.py
+ds

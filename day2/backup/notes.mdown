@@ -1,0 +1,40 @@
+Lecture 2
+Thu Jan  8 19:32:53 PST 2015
+
+# Today's Goals:
+
+- Introduce basic Python
+- Learn two data structures- lists and dicts
+- See that Python lists and dicts correspond to JSON
+- Write a client for a REST API
+
+Why this is awesome:
+    If you can write a client for any REST API you can programmatically
+access an essentially unlimited amount of data.
+So we're done looking at the 'iris' data :)
+
+Other names for Python dictionary:
+- key / value pair
+- dict
+- hash table
+- hash map
+- associative array
+
+Ways of transferring data:
+
+1. verbally
+2. look in a book
+3. email
+4. download CSV file from the web
+5. query remote database or system
+    - Direct connection to underlying database technology *Danger zone!*
+    - Go through a REST API layer *Easier!*
+
+Use common format like JSON, XMl, CSV
+CSV also called 'flat file'
+
+Remote databases are very powerful
+
+
+Data Golf:
+1 million integers in a Python list
