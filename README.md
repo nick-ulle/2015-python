@@ -89,14 +89,15 @@ Python code is supported by a vast array of editors.
 + [Spyder IDE][Spyder], included in Anaconda, 
   is a Python equivalent of RStudio, 
   designed with scientific computing in mind.
-+ [PyCharm IDE][PyCharm] has very well-designed user interface.
-+ General-purpose text editors, such as [Vim][] and [Emacs][], are a great
++ [PyCharm IDE][PyCharm] and [Sublime][] provide good user interfaces.
++ Terminal-based text editors, such as [Vim][] and [Emacs][], are a great
   choice for ambitious students. They can be used with any language. 
   See [here][Text Editors] for more details. Clark and Nick both use Vim.
 
 [Anaconda]: http://continuum.io/downloads
 [Spyder]: https://code.google.com/p/spyderlib/
 [PyCharm]: https://www.jetbrains.com/pycharm/
+[Sublime]: http://www.sublimetext.com/
 [Vim]: http://www.vim.org/
 [Emacs]: https://www.gnu.org/software/emacs/
 [Text Editors]: http://heather.cs.ucdavis.edu/~matloff/ProgEdit/ProgEdit.html
