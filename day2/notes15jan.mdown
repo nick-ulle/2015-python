@@ -1,0 +1,39 @@
+Lecture 2
+
+Thu Jan 15 14:10:15 PST 2015
+
+# Today's Goals
+- Introduce basic python
+- Learn two important data structures lists and dicts
+- See that Python lists and dicts correspond to JSON
+- Write a client for a REST API
+
+# Why this is awesome!!
+    You can access an *enormous* amount of data.
+
+Python dictionaries:
+- Key / Value Pair
+- Hash table
+- Hash map
+- Associative array
+
+Data golf!!!!
+
+floating point number - 8 bytes
+
+How large is a Python list with 1 million floating point numbers?
+A lower bound should be about 8 MB.
+
+Data transfer:
+- Talking
+- Writing stuff down in books
+- Email each other data in a CSV attachment
+- download a csv file from the web
+- direct machine to machine transfer from a larger backend system
+  (database)
+    1. Direct connection to that technology
+    2. To use REST API (abstraction layer)
+
+Common forms for data:
+XML, CSV, JSON
+

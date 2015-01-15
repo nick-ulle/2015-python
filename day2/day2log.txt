@@ -1,0 +1,179 @@
+a = 123
+a
+a
+# The answer to what happens when....
+# Open an interpreter, try it, and see!!
+type(a)
+type(1.0)
+type('hello')
+type(True)
+type(None)
+davis = {'state': 'California', 'students': 35000}
+type(davis)
+# The whole python language is built on dictionaries (dicts)
+davis.keys()
+davis.values()
+davis.items()
+davis
+davis['state']
+davis['state'] = 'CA'
+davis
+davis['cool'] = True
+davis
+type(davis['cool'])
+# that was the dictionary
+# Moving on to the list
+nums = [0, 10, 20, 30, 40]
+nums
+type(nums)
+?len
+nums
+len(nums)
+# We want to pick elements from the list
+nums[0]
+# Python starts counting at 0!!!!!!!!!!!
+# Very important
+nums
+nums[0]
+nums[1]
+nums[2]
+nums
+nums[len(nums)]
+nums
+nums[-1]
+# In python this is called 'slicing'
+nums[-2]
+nums[0:2]
+# That says 'up to, but excluding the 2nd element'
+nums[:2]
+# To get all elements starting with the 2nd:
+nums[2:]
+nums[1:]
+clear
+nums[:2]
+nums[2:]
+k = 3
+nums[:k]
+nums[k:]
+nums[:k] + nums[k:]
+nums
+nums + 5
+nums + [5]
+nums
+# Suppose we want to add 5 to each element
+# In math notation you might write this:
+# {x + 5 for x in nums}
+[x + 5 for x in nums]
+# This is called a list comprehension
+nums
+davis
+a = [12, ['a', 'b']]
+a
+import json
+json.dumps?
+json.dumps(davis)
+davis
+davis
+davis['nums'] = nums
+davis
+json.dumps(davis)
+json.loads?
+json.dumps(davis)
+dstring = json.dumps(davis)
+dstring
+davis2 = json.loads(dstring)
+davis2
+davis
+davis2
+davis == davis2
+a = 'It's a beautiful day!'
+a = "It's a beautiful day!"
+a
+b = '''
+Hello everybody.
+blah blah
+'''
+b
+clear
+davis
+'cool' in davis
+clear
+davis
+2 ** 10
+2 ** 20
+2 ** 10
+before = 18.7
+x = [float(x) for x in range(int(1e6))]
+len(x)
+x[:4]
+x[-5:]
+after = 44.2
+before
+after - before
+x = [float(x) for x in range(4)]
+x
+a = range(int(1e12))
+a
+b = range(10, 100)
+b
+next(b)
+b.step
+import requests
+requests.get?
+google = requests.get('http://www.google.com')
+google = requests.get('https://www.google.com')
+cd backup/
+ls
+google = requests.get('https://www.google.com')
+google = requests.get('https://www.google.com')
+google
+google = requests.get('https://www.google.com')
+# How do we learn about unknown objects?
+# Use the `type` function
+type(google)
+google.status_code
+google.text
+import requests
+base = 'https://api.github.com/search/repositories'
+response = requests.get(base)
+response
+type(response)
+response.text
+response.json?
+response.json()
+a = response.json()
+a
+a
+type(a)
+len(a)
+a
+a.keys()
+payload = {'q': 'data science'}
+type(payload)
+payload['sort'] = 'stars'
+payload
+response = requests.get(base, params=payload)
+a = response.json()
+response
+a
+type(a)
+len(a)
+a.keys()
+a['total_count']
+a['items']
+len(a['items'])
+type(a['items'])
+b = a['items']
+b
+b[0]
+b[0].keys()
+c = [[x['full_name'], x['watchers']] for x in b]
+c
+ls
+pwd
+dir()
+davis
+a = 'hello'
+a = 10
+a.real
+% history -f day2log.txt
