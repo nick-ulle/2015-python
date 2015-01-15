@@ -1,0 +1,27 @@
+# Exercise 1 - Agricultural Web Scraping
+
+In this assignment we will write a client that pulls data from the
+US Department of Agriculture Quick Stats database.  
+
+The goals of this exercise are:
+
+- Become more familiar with the basics of Python
+- Develop skill in interacting with web API's
+
+The documentation for this API is available
+[here](http://quickstats.nass.usda.gov/api). Read it carefully.
+
+We've provided a template in this folder for your use called
+`usda_blank.py`. After you request a key, your task is to fill in the
+function bodies in the template and create a working program. Some sample
+queries are included to get started. 
+
+From Ipython you can use %run to run the sample queries and verify that the
+results match what you expected. Then try building your own queries.
+
+### Task: 
+
+- List the top 10 tobacco producing states in 2012 as measured by
+  production in dollars.
+
+Hint: 6th is Pennsylvania with $40,379,000.
