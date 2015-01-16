@@ -11,11 +11,16 @@ Fun fact: This actually queries a database with 31 million records
 import requests
 
 
-# You'll need to change this to the key from the email
+# Posting your keys online for anyone to find and use is a BAD IDEA!
+
+# You'll need to change this to the key from the email.
+# Only use this technique if this script will remain private, ie. stored
+# just on your local computer.
 usda_key = 'your key here'
 
 # If you save this publicly to Github then it's better to keep your key in
-# a separate private plain text file called 'usda_key.txt'
+# a separate private plain text file called 'usda_key.txt' which is NOT
+# added / committed to the repository.
 try:
     with open('usda_key.txt') as f:
         usda_key = f.read().rstrip()

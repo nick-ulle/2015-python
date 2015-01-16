@@ -1,5 +1,5 @@
 '''
-Script to download some interesting data from Github.com 
+Script to download some interesting data from Github.com
 
 Thu Dec 18 17:13:16 PST 2014
 
