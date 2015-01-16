@@ -1,5 +1,8 @@
 # Exercise 1 - Agricultural Web Scraping
 
+_Update_: Please ensure that you take care to keep your key private,
+ie. not on Github.
+
 In this assignment we will write a client that pulls data from the
 US Department of Agriculture Quick Stats database.  
 
