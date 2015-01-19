@@ -1,7 +1,13 @@
 # Exercise 1 - Agricultural Web Scraping
 
-_Update_: Please ensure that you take care to keep your key private,
-ie. not on Github.
+_Update 2_: Hint should be-
+
+7th is Pennsylvania with $43,487,000. And there are only 8 states
+listed, not 10.
+
+Thanks to Rylan Schaeffer and Haomiao Meng for pointing this out.
+
+_Update 1_: Keep your key private, ie. not on Github.
 
 In this assignment we will write a client that pulls data from the
 US Department of Agriculture Quick Stats database.  
@@ -24,7 +30,5 @@ results match what you expected. Then try building your own queries.
 
 ### Task: 
 
-- List the top 10 tobacco producing states in 2012 as measured by
+- List the top 8 tobacco producing states in 2012 as measured by
   production in dollars.
-
-Hint: 6th is Pennsylvania with $40,379,000.
