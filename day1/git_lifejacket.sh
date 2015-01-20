@@ -109,6 +109,8 @@ git log -3
 #
 # make a new file, type something in it, and commit the file.
 
+# Try making your GitHub account, creating a repo, cloning, and make a commit!
+
 # Working With Remote Repositories
 # ================================
 # What if you want to share your work online (say, GitHub)? An online
