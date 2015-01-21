@@ -1,0 +1,102 @@
+a = [1, 2, 3]
+a + 5
+[x + 5 for x in a]
+import numpy
+import numpy as np
+b = np.array(a)
+a
+b
+type(b)
+np.array([1, 2, 6, 4])
+c = np.arange(1e6)
+41.7 - 33.8
+d = [float(x) for x in range(int(1e6))]
+73.2 - 41.7
+a
+a + 5
+b + 5
+%timeit print('Hello world!')
+c
+%timeit c + 5
+d
+%timeit [x + 5 for x in d]
+type(d)
+len(d)
+b
+b_copy = b
+b
+b_copy
+b_copy[1] = 7
+b_copy
+b
+import this
+b = np.array([1, 2, 3])
+b_copy = b.copy()
+b
+b_copy
+b_copy[1] = 7
+b_copy
+b
+A = np.array([[1, 2], [3, 4]])
+A
+A = np.array([1, 2, 3, 4]).reshape(2, 2)
+A
+np.zeros(4).reshape(2, 2)
+I = np.eye(2)
+I
+A
+A * I
+A.dot(I)
+np.dot(A, I)
+A @ I
+A[1, 0]
+A
+np.random.binomial?
+steps = np.random.binomial(1, 0.5, 100)
+steps
+steps[steps == 0] = -1
+steps
+positions = steps.cumsum()
+positions
+import matplotlib.pyplot as plt
+plt.plot(positions)
+plt.show()
+import skimage.io as io
+img = io.imread('photo.png', as_grey=True)
+img
+img
+img.shape
+type(img)
+ctr = np.mean(img, axis=0)
+ctr.shape
+ctr_img = img - ctr
+plt.imshow(img)
+plt.show()
+plt.imshow(img).set_cmap('gray')
+plt.show()
+plt.imshow(ctr_img).set_cmap('gray')
+plt.show()
+np.linalg.svd?
+_, _, v = np.linalg.svd(ctr_img)
+v.shape
+v = v.T
+reduced_v = v[:, :100]
+v.shape
+reduced_v.shape
+prin_comp = ctr_img.dot(reduced_v)
+prin_comp.shape
+reconst = prin_comp.dot(reduced_v.T) + ctr
+plt.imshow(reconst).set_cmap('gray')
+plt.show()
+fig, ax = plt.subplots(1, 2)
+ax[0].imshow(img).set_cmap('gray')
+ax[1].imshow(reconst).set_cmap('gray')
+fig.show()
+img.size
+reconst = prin_comp.dot(reduced_v.T) + ctr
+prin_comp.size + reduced_v.size + ctr.size
+original_size = img.size
+new_size = prin_comp.size + reduced_v.size + ctr.size
+new_size / original_size
+reconst.size
+%history -f code_log.txt
