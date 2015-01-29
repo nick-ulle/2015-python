@@ -1,0 +1,112 @@
+clear
+import matplotlib.pyplot as plt
+import networkx as nx
+plt.ion()
+# Make a graph
+G = nx.Graph()
+G.add_edge('A', 'B')
+clear
+G.add_edge('A', 'C')
+G.add_edge('B', 'C')
+G.add_edge('B', 'D')
+nx.draw_networkx(G, node_size=1000, alpha=0.2)
+clear
+nx.dijkstra_path(G, 'C', 'D')
+clear
+nx.dijkstra_path(G, 'C', 'D')
+%run analysis.py
+s
+clear
+%run analysis.py
+names
+%run analysis.py
+together(('X', 'Y'), 'X Y Z')
+together(('X', 'Y'), 'X  Z')
+clear
+%run analysis.py
+namepairs
+%run analysis.py
+namepairs
+set(1, 2, 3)
+clear
+set([1, 2, 3])
+%run analysis.py
+sentences
+%run analysis.py
+%run analysis.py
+clear
+%run analysis.py
+clear
+namepairs
+clear
+%run analysis.py
+G
+G.edges
+clear
+G.edges()
+nx.draw_networkx(G, node_size=1000, alpha=0.2)
+nx.dijkstra_path(G, 'Nick', 'Qi')
+clear
+# That's because they were separated components
+list(nx.connected_components(G))
+clear
+list(nx.connected_components(G))
+nx.connected_components(G)
+# How to avoid regex:
+g = 'google.com'
+'goog' in g
+g.endswith('.com')
+clear
+korean = '안뇽 하세요?'
+korean
+%run analysis.py
+pattern
+%run analysis.py
+clear
+%run analysis.py
+%run analysis.py
+%run analysis.py
+%run analysis.py
+%run analysis.py
+clear
+%run analysis.py
+%run analysis.py
+%run analysis.py
+pattern2.findall(s)
+clear
+%run announce.py
+b
+%run announce.py
+dearwife
+clear
+dearwife
+dearwife.format(b)
+dearwife.format(*b)
+clear
+dearwife.format(*b)
+b
+clear
+%run announce.py
+b
+dict(b)
+clear
+%run announce.py
+b
+%run announce.py
+clear
+%run announce.py
+clear
+%run announce.py
+%run announce.py
+clear
+%run announce.py
+%run announce.py
+clear
+%run announce.py
+%run announce.py
+clear
+%run announce.py
+ls
+clear
+cat dearyeji.txt
+%history -f 'day6log.txt'
