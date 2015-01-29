@@ -46,6 +46,10 @@ print(pattern.findall(s))
 
 sentences = s.split('.')
 
+# Note- this algorithm is O(N^2) quadratically slow in the number of names
+# since there are n choose 2 names.
+# You should modify it so that it's O(N) or better.
+
 def together(namepair, sentence):
     '''
     Return True if all the elements of namepair are in
@@ -61,20 +65,3 @@ for s in sentences:
         if together(namepair, s):
             # * does unpacking
             G.add_edge(*namepair)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

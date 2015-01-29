@@ -19,9 +19,7 @@ def babynamer():
     Returns a baby name and gender
     '''
     i = np.random.choice(len(names), p=names['probs'])
-    return  names.iloc[i, :]
-
-
+    return names.iloc[i, :]
 
 if __name__ == '__main__':
 
@@ -36,9 +34,8 @@ if __name__ == '__main__':
 
     print(sfull)
 
-
     s2 = '''
-    {name} is a {gender}. In 2013 there were {count:,} babies with that name. 
+    {name} is a {gender}. In 2013 there were {count:,} babies with that name.
     The probability is {probs:.3g}.
     '''
 
