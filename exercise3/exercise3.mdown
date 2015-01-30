@@ -55,8 +55,9 @@ have a directed graph in mind. You can also set weights on the edges.
 ## Visualize
 
 Use `networkx` and Matplotlib to visualize the graph. You may need to 
-plot only a subsets of the nodes in order for it to appear meaningful. For
-those who are more interested in graph visualization,
+plot only a subsets of the nodes in order for it to appear meaningful. 
+Consider using a visual representation of weighted edges.
+For those who are more interested in graph visualization,
 [Graphviz](http://www.graphviz.org/) is a wonderful tool. Use
 `write_dot` to generate it from within `networkx`.
 
