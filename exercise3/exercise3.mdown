@@ -1,66 +1,43 @@
-# Exercise 3 - Text network analysis
+# Exercise 3 - War and Peace and Text
 
-In this exercise we'll use Python to read text and create a graph of
-character relationships using `networkx`.
+In this exercise we'll use Python to read the book 'War and Peace'
+and create a graph of character relationships using `networkx`.
 
 The goal of this assignment are:
-    - become more comfortable working with text 
-    - think about data sources in a new way
-    - gain confidence in building graphs
+- become more comfortable working with text 
+- think about data sources in a new way
+- gain confidence in building graphs
 
-This assignment is intentionally more open ended. 
-There's no limit to how deep you can go here, and you are certainly
-welcome to use and modify the code and ideas from day6. Graph theory is an
-exciting field of research in math, stats, and computer science.
+### Download data
 
-## Text Sources
+Download the text for 'War and Peace' from Project Gutenberg at 
+https://www.gutenberg.org/cache/epub/2600/pg2600.txt
 
-Pick your favorite book. You are also welcome to use any other substantial
-text source, like a movie script, email corpus, court transcript, 
-or lengthy article.
-You can find books at [Project Gutenberg](https://www.gutenberg.org/) and
-movie scripts at the [Internet Movie Script Database](http://www.imsdb.com/).
+### Regular Expressions
 
-# Analysis
+Use the regular expression that we wrote in class to find all the
+characters / places. Note that it may need some modification so that it
+doesn't pick up the space in front.
 
-## Think of questions
+Note- this doesn't have to be perfect. You're going to pick up names of
+places and words like 'Prince'. That's ok.
 
-Think about questions that a graph can answer. For example:
-    - What's the shortest path between two nodes?
-    - Is the graph totally connected?
-    - Are there several distinct groups?
-    - Traveling salesman problem :) ? 
+### Count appearances
 
-An example: Can you use a graph to pick out the threaded storylines in 
-the movie Pulp Fiction?
+Count the number of times that each character/name appears in the text. 
+Which are the top 10 and what are their counts?
 
-## Graph function
+### Together in sentences
 
-Define an appropriate heuristic for building a graph. 
-
-In class we used people as nodes and 
-defined edges between them if their names appeared in 
-the same sentence. One could also define edges to exist if names appear
-in the same paragraph or within a certain number of characters. 
-
-Another possibility is to use regular expressions to exploit the structure
-of a transcript in a creative way.
-
-## Build Graph
-
-Build the graph using `networkx.Graph` for an undirected graph (ie.
-direction has no meaning) or `networkx.DiGraph` if you
-have a directed graph in mind. You can also set weights on the edges.
+Use the list of names to build an undirected graph in networkx. 
+Weight each edge according to the number of times that the two appear in
+the same sentence together. For example, if 'Sonya' and 'Lisa' appear
+together in 20 sentences, then the weight of that edge should be 20.
 
 ## Visualize
 
-Use `networkx` and Matplotlib to visualize the graph. You may need to 
-plot only a subsets of the nodes in order for it to appear meaningful. 
-Consider using a visual representation of weighted edges.
-For those who are more interested in graph visualization,
-[Graphviz](http://www.graphviz.org/) is a wonderful tool. Use
-`write_dot` to generate it from within `networkx`.
-
-## Summarize
-
-Answer the questions that you originally posed.
+Use `networkx` to visualize the top 10 characters. Let the appearance count
+determine the size of the node.
+Use the weight of the edge to determine the aesthetics of the line. 
+Something like this:
+http://networkx.github.io/documentation/networkx-1.9.1/examples/drawing/weighted_graph.html
