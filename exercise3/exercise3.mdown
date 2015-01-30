@@ -17,7 +17,8 @@ https://www.gutenberg.org/cache/epub/2600/pg2600.txt
 
 Use the regular expression that we wrote in class to find all the
 characters / places. Note that it may need some modification so that it
-doesn't pick up the space in front.
+doesn't pick up the space in front. You'll also need to modify it to work
+with other sentence delimiters besides '.'. Consider '?' and '!'.
 
 Note- this doesn't have to be perfect. You're going to pick up names of
 places and words like 'Prince'. That's ok.
