@@ -86,10 +86,10 @@ pd.read_sql('SELECT * FROM aa ORDER BY age DESC LIMIT 10', engine)
 
 # YOUR TURN:
 # 
-# * Who's the youngest person in the table? (Marlee Matlin)
-# * How many Hepburns are in the table? (Katherine 4, Audrey 1)
-# * How many Californians have won? (19)
-# * Who has the most wins? (Katherine Hepburn)
+# * Who's the youngest person in the table?
+# * How many Hepburns are in the table?
+# * How many Californians have won?
+# * Who has the most wins?
 
 # The trick is to take advantage of SQL and Pandas together. Generally, you
 # want to use SQL to reduce the data to a manageable size (i.e., so it fits in
