@@ -1,0 +1,18 @@
+Quick summary:
+
+Web API's   - requests, JSON
+numerical computing-    Numpy
+Munging     -pandas
+DataVis, maps     - matplotlib
+graphs, text    - networkx, re
+databases       - sqlalchemy
+stats / ML      - scipy, sklearn
+
+You can be extremely productive with these tools.
+
+But theree's so much more!!
+
+How to continue learning:
+- Kaggle
+- Project Euler
+- Read good code
