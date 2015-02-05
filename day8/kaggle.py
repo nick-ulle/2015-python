@@ -1,8 +1,16 @@
+'''
+Titanic data set
+
+Predict who will survive
+'''
+
+import pandas as pd
+
 ##################################################
 # 
 # 1) Prepare the data
 #
-# Machine learning is regression with a sexier name.
+# Machine learning - better marketing
 #
 # Fitting regression models requires clean numeric data.
 # Typically we have an n x 1 vector response y and an n x p 
@@ -17,7 +25,17 @@
 # 
 ##################################################
 
+titanic = pd.read_csv('titanic.csv')
 
+y = titanic['Survived']
+
+# Features to include in the model
+features = ['Pclass', 'Age', 'SibSp', 'Parch', 'Fare']
+
+X = titanic[features].copy()
+
+# Add in the gender
+X['Sex'], genders = pd.factorize(titanic['Sex'])
 
 ##################################################
 # 
@@ -32,7 +50,11 @@
 # 
 ##################################################
 
+from sklearn.ensemble import RandomForestClassifier
 
+rfmod = RandomForestClassifier()
+
+rfmod.fit(X, y)
 
 ##################################################
 #
