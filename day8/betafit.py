@@ -23,4 +23,5 @@ x = np.linspace(0, 24)
 plt.plot(x, Xsleep.pdf(x), linewidth=4)
 s = 'alpha: {:.3}, beta: {:.3}, loc: {}, scale: {}'
 plt.title(s.format(*p))
+plt.xlabel('Hours of sleep')
 plt.savefig('sleep.pdf')
