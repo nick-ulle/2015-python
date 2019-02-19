@@ -1,3 +1,5 @@
+[Course Videos](http://dsi.ucdavis.edu/PythonMiniCourse/)
+
 # Python for Data Mining
 
 [Python][] is a programming language designed to have clear, concise, and
